@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingBottom="2dp"
+    android:paddingRight="2dp"
+    android:paddingLeft="2dp"
+
+    android:weightSum="3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:layout_weight="1"
+        android:weightSum="4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/b11"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:text="Fixed point"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/b21"
+            android:text="Conversion"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:gravity="center"
+            android:id="@+id/b22"
+            android:text="Chuyển đổi"
+            android:textAllCaps="false"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/b31"
+            android:textAllCaps="false"
+            android:text="Algebra manipulate "
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:paddingTop="30dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/b41"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Interpolation" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:id="@+id/b52"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Nguyên tắc" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/b51"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Principle" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:textAllCaps="false"
+            android:id="@+id/b32"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Sự lặp lại" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="30dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:weightSum="4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_weight="1"
+            android:text="PP lặp đơn"
+            android:gravity="center"
+            android:layout_margin="2dp"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:id="@+id/b62"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_weight="1"
+            android:text="Interation"
+            android:layout_margin="2dp"
+            android:textAllCaps="false"
+            android:id="@+id/b61"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_weight="1"
+            android:text="Điểm cố định"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:id="@+id/b12"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_margin="2dp"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:text="Phép nội suy"
+            android:id="@+id/b42"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
