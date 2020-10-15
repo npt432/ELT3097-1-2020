@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:weightSum="21"
+  android:orientation="vertical"
+  android:paddingBottom="16dp"
+  android:paddingRight="16dp"
+  android:paddingLeft="16dp"
+  android:paddingTop="16dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:weightSum="30"
+    android:orientation="horizontal">
+
+    <ImageButton
+      android:id="@+id/ibClose"
+      android:layout_width="wrap_content"
+      android:layout_height="50dp"
+      android:background="@android:color/transparent"
+      android:layout_weight="1"
+      app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+      android:contentDescription="@string/todo" />
+
+    <ProgressBar
+      android:id="@+id/pbProgressRegister"
+      style="?android:attr/progressBarStyleHorizontal"
+      android:layout_width="wrap_content"
+      android:layout_height="50dp"
+      android:layout_weight="28"
+      android:layout_marginHorizontal="24dp"/>
+    <ImageButton
+      android:id="@+id/ibAdjust"
+      android:layout_width="wrap_content"
+      android:layout_height="50dp"
+      android:layout_weight="1"
+      android:background="@android:color/transparent"
+      android:src="@drawable/ibapp" />
+
+
+  </LinearLayout>
+
+  <TextView
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Phân kì"
+    android:textColor="#353532"
+    android:textSize="32dp"
+    android:id="@+id/tvWordInput"
+    />
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ĐÁP ÁN CỦA BẠN"
+    android:layout_weight="1"
+    android:textSize="11dp"
+    android:textColor="#F43636"/>
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:textSize="15dp"
+    android:id="@+id/tvWrongAnswer"
+    android:textColor="#1C1B1B"/>
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ĐÁP ÁN ĐÚNG"
+    android:textSize="11dp"
+    android:layout_weight="1"
+    android:textColor="#27AA03"/>
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Converge"
+    android:layout_weight="1"
+    android:id="@+id/tvRightAnswer"
+    android:textSize="15dp"
+    android:textColor="#191717"/>
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="14"/>
+
+  <Button
+    android:text="@string/p_n"
+    android:id="@+id/btnCheck"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="#00D9FF"
+    android:textColor="#FAFAF5"
+    android:textSize="20dp"
+    android:layout_gravity="end|bottom" />
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:weightSum="7">
+    <EditText
+      android:layout_weight="4"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:background="@android:color/transparent"
+      android:layout_gravity="bottom"
+      android:textSize="25sp"
+      android:id="@+id/editDataEntry"
+      android:autofillHints="" />
+    <Button
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="Tôi đã trả lời đúng"
+      android:background="@android:color/transparent"
+      android:layout_gravity="bottom"
+      android:textSize="11sp"
+      android:layout_weight="3"
+      android:textColor="#A800BCD4"/>
+
+  </LinearLayout>
+
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_weight="1"
+    android:background="#F43636"/>
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:textColor="#F43636"
+    android:text="CHÉP LẠI ĐÁP ÁN ĐÚNG"
+    android:textSize="11sp"/>
+</LinearLayout>
