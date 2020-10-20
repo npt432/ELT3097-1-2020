@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Quizlet</string>
-    <string name="back"><![CDATA[<-]]></string>
-    <string name="sai">Sai</string>
-    <string name="xe_c">xe cộ</string>
-    <string name="vehicle">vehicle</string>
-    <string name="ng">Đúng</string>
-</resources>
