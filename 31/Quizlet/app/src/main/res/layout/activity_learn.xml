@@ -4,6 +4,209 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".LearnActivity">
+  android:background="@android:color/white"
+  tools:context=".MainActivity">
+
+  <Button
+    android:id="@+id/answer1Button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:paddingLeft="20dp"
+    android:background="@drawable/border"
+    android:fontFamily="sans-serif"
+    android:text="persude"
+    android:textAlignment="textStart"
+    android:textAllCaps="false"
+    android:textColor="@drawable/button_answer"
+    app:layout_constraintBottom_toTopOf="@+id/answer2Button"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+    android:id="@+id/answer2Button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:paddingLeft="20dp"
+    android:background="@drawable/border"
+    android:fontFamily="sans-serif"
+    android:text="pesticide"
+    android:textAlignment="textStart"
+    android:textAllCaps="false"
+    android:textColor="@drawable/button_answer"
+    app:layout_constraintBottom_toTopOf="@+id/answer3Button"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+    android:id="@+id/answer3Button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:paddingLeft="20dp"
+    android:background="@drawable/border"
+    android:fontFamily="sans-serif"
+    android:text="encourage"
+    android:textAlignment="textStart"
+    android:textAllCaps="false"
+    android:textColor="@drawable/button_answer"
+    app:layout_constraintBottom_toTopOf="@+id/answer4Button"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+    android:id="@+id/answer4Button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:paddingLeft="20dp"
+    android:background="@drawable/border"
+    android:fontFamily="sans-serif"
+    android:text="performed"
+    android:textAlignment="textStart"
+    android:textAllCaps="false"
+    android:textColor="@drawable/button_answer"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <FrameLayout
+    android:id="@+id/frameContent"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/progressBar">
+
+  </FrameLayout>
+
+  <ImageButton
+    android:id="@+id/undoImageButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="16dp"
+    android:background="@android:color/transparent"
+    android:src="@drawable/ic_close"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageButton
+    android:id="@+id/tuneImageButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="17dp"
+    android:layout_marginEnd="16dp"
+    android:background="@android:color/transparent"
+    android:scaleType="centerInside"
+    android:src="@drawable/ic_tune"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+    android:id="@+id/arrowFamiliarImageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:src="@drawable/ic_arrow_right"
+    app:layout_constraintEnd_toStartOf="@+id/familiarTextView"
+    app:layout_constraintStart_toEndOf="@+id/amoutQuestionTextView"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+    android:id="@+id/arrowMasteredImageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:src="@drawable/ic_arrow_right"
+    app:layout_constraintEnd_toStartOf="@+id/masteredTextView"
+    app:layout_constraintStart_toEndOf="@+id/familiarTextView"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+    android:id="@+id/familiarImageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_familiar_check_mark"
+    app:layout_constraintEnd_toEndOf="@+id/familiarTextView"
+    app:layout_constraintStart_toStartOf="@+id/familiarTextView"
+    app:layout_constraintTop_toBottomOf="@+id/familiarTextView"
+    app:tint="@color/colorGray" />
+
+  <ImageView
+    android:id="@+id/masteredImageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_mastered_check_mark"
+    app:layout_constraintEnd_toEndOf="@+id/masteredTextView"
+    app:layout_constraintStart_toStartOf="@+id/masteredTextView"
+    app:layout_constraintTop_toBottomOf="@+id/masteredTextView"
+    app:tint="@color/colorGray" />
+
+  <ProgressBar
+    android:id="@+id/progressBar"
+    style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00FF5722"
+    android:progress="0"
+    android:progressBackgroundTint="#8C6BE6"
+    android:progressBackgroundTintMode="add"
+    android:progressTint="#FF743FF1"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/familiarImageView" />
+
+  <TextView
+    android:id="@+id/amoutQuestionTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="40dp"
+    android:textSize="20dp"
+    app:layout_constraintStart_toEndOf="@+id/undoImageButton"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/familiarTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:textSize="20dp"
+    app:layout_constraintEnd_toStartOf="@+id/masteredTextView"
+    app:layout_constraintStart_toEndOf="@+id/amoutQuestionTextView"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/masteredTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="40dp"
+    android:textSize="20dp"
+    app:layout_constraintEnd_toStartOf="@+id/tuneImageButton"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/questionTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="27dp"
+    android:layout_marginBottom="200dp"
+    android:layout_marginStart="16dp"
+    android:fontFamily="sans-serif"
+    android:text="Khuyến khích"
+    android:textColor="@android:color/black"
+    android:textSize="20dp"
+    app:layout_constraintBottom_toTopOf="@+id/answer1Button"
+    app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

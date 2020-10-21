@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+  <Button
+    android:id="@+id/answer1Button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:paddingLeft="20dp"
+    android:background="@drawable/border"
+    android:fontFamily="sans-serif"
+    android:text="persude"
+    android:textAlignment="textStart"
+    android:textAllCaps="false"
+    android:textColor="@drawable/button_answer"
+    app:layout_constraintBottom_toTopOf="@id/answer2Button"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+    android:id="@+id/answer2Button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:paddingLeft="20dp"
+    android:background="@drawable/border"
+    android:fontFamily="sans-serif"
+    android:text="pesticide"
+    android:textAlignment="textStart"
+    android:textAllCaps="false"
+    android:textColor="@drawable/button_answer"
+    app:layout_constraintBottom_toTopOf="@+id/answer3Button"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+    android:id="@+id/answer3Button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:paddingLeft="20dp"
+    android:background="@drawable/border"
+    android:fontFamily="sans-serif"
+    android:text="encourage"
+    android:textAlignment="textStart"
+    android:textAllCaps="false"
+    android:textColor="@drawable/button_answer"
+    app:layout_constraintBottom_toTopOf="@+id/answer4Button"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+    android:id="@+id/answer4Button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:paddingLeft="20dp"
+    android:background="@drawable/border"
+    android:fontFamily="sans-serif"
+    android:text="performed"
+    android:textAlignment="textStart"
+    android:textAllCaps="false"
+    android:textColor="@drawable/button_answer"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <TextView
+    android:id="@+id/questionTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="27dp"
+    android:layout_marginBottom="200dp"
+    android:layout_marginStart="16dp"
+    android:fontFamily="sans-serif"
+    android:text="Khuyến khích"
+    android:textColor="@android:color/black"
+    android:textSize="20dp"
+    app:layout_constraintBottom_toTopOf="@+id/answer1Button"
+    app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

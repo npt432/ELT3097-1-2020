@@ -1,114 +1,53 @@
 package uet.vnu.quizlet;
 
-import android.graphics.Color;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.viewpager.widget.ViewPager;
-import com.google.android.material.tabs.TabItem;
-import com.google.android.material.tabs.TabLayout;
-import com.google.android.material.tabs.TabLayout.OnTabSelectedListener;
-import com.google.android.material.tabs.TabLayout.Tab;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-  private SectionsPagerAdapter mSectionsPagerAdapter;
 
-  private ViewPager mViewPager;
+  Button learnButton;
+  Button flashCardButton;
+  Button writeButton;
+  Button matchButton;
+  Button testButton;
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
+    learnButton = (Button) findViewById(R.id.learnButton);
+    flashCardButton = (Button) findViewById(R.id.flashCardButton);
+    writeButton = (Button) findViewById(R.id.writeButton);
+    matchButton = (Button) findViewById(R.id.matchButton);
+    testButton = (Button) findViewById(R.id.testButton);
 
-
-  }
-
-  public static class PlaceholderFragment extends Fragment {
-
-    private static final String KEY_COLOR = "key_color";
-
-    public PlaceholderFragment() {
-    }
-
-    // Method static dạng singleton, cho phép tạo fragment mới, lấy tham số đầu vào để cài đặt màu sắc.
-    public static PlaceholderFragment newInstance(int color) {
-      PlaceholderFragment fragment = new PlaceholderFragment();
-      Bundle args = new Bundle();
-      args.putInt(KEY_COLOR, color);
-      fragment.setArguments(args);
-      return fragment;
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-        Bundle savedInstanceState) {
-      View rootView = inflater.inflate(R.layout.fragment_first, container, false);
-      RelativeLayout relativeLayout = (RelativeLayout) rootView.findViewById(R.id.rl_fragment);
-
-      /**
-       * Số 1: Màu xanh.
-       * Số 2: Màu đỏ.
-       * Số 3: Màu vàng.
-       */
-      switch (getArguments().getInt(KEY_COLOR)) {
-        case 1:
-          relativeLayout.setBackgroundColor(Color.GREEN);
-          break;
-        case 2:
-          relativeLayout.setBackgroundColor(Color.RED);
-          break;
-        case 3:
-          relativeLayout.setBackgroundColor(Color.YELLOW);
-          break;
-        default:
-          relativeLayout.setBackgroundColor(Color.GREEN);
-          break;
+    learnButton.setOnClickListener(new OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        Intent learnActivity = new Intent(MainActivity.this, LearnActivity.class);
+        startActivity(learnActivity);
       }
+    });
 
-      TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-      textView.setText("Kteam");
-      return rootView;
-    }
-  }
-  public class SectionsPagerAdapter extends FragmentPagerAdapter {
-
-    public SectionsPagerAdapter(FragmentManager fm) {
-      super(fm);
-    }
-
-    @Override
-    public Fragment getItem(int position) {
-      // position + 1 vì position bắt đầu từ số 0.
-      return PlaceholderFragment.newInstance(position + 1);
-    }
-
-    @Override
-    public int getCount() {
-      return 3;
-    }
-
-    @Override
-    public CharSequence getPageTitle(int position) {
-      switch (position) {
-        case 0:
-          return "SECTION 1";
-        case 1:
-          return "SECTION 2";
-        case 2:
-          return "SECTION 3";
+    writeButton.setOnClickListener(new OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        Intent writeActivity = new Intent(MainActivity.this, WriteActivity.class);
+        startActivity(writeActivity);
       }
-      return null;
-    }
-  }
+    });
 
+    testButton.setOnClickListener(new OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        Intent testActivity = new Intent(MainActivity.this, TestActivity.class);
+        startActivity(testActivity);
+      }
+    });
+
+  }
 }
