@@ -17,13 +17,13 @@ public class TestActivity_choose_answer_true_false extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test_true_false);
+        setContentView(R.layout.activity_test_choose_answer_true_false;
 
         button_true = (Button) findViewById(R.id.button);
         button_true.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent nextScreen = new Intent(TestActivity_choose_answer_true_false.this, TestActivity_write.class);
+                Intent nextScreen = new Intent(TestActivity_choose_answer_true_false.this, TestActivity_type_answer.class);
                 startActivity(nextScreen);
             }
         });
@@ -32,7 +32,7 @@ public class TestActivity_choose_answer_true_false extends AppCompatActivity {
         button_false.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent nextScreen = new Intent(TestActivity_choose_answer_true_false.this, TestActivity_write.class);
+                Intent nextScreen = new Intent(TestActivity_choose_answer_true_false.this, TestActivity_type_answer.class);
                 startActivity(nextScreen);
             }
         });
