@@ -17,7 +17,7 @@ public class TestActivity_choose_answer_true_false extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test_choose_answer_true_false;
+        setContentView(R.layout.activity_test_choose_answer_true_false);
 
         button_true = (Button) findViewById(R.id.button);
         button_true.setOnClickListener(new View.OnClickListener() {
