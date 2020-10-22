@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class TestActivity_selection extends AppCompatActivity {
+public class TestActivity_choose_answer extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
