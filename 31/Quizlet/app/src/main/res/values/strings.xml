@@ -1,0 +1,21 @@
+<resources>
+  <string name="app_name">Quizlet</string>
+  <string name="wrong_content">INCORRECT</string>
+  <string name="right_content">Nicely Done</string>
+  <string name="continue_key">Continue</string>
+  <string name="word_1">Extensive</string>
+  <string name="word_2">Supply</string>
+  <string name="word_3">Damage</string>
+  <string name="word_4">Lobby</string>
+  <string name="meaning_word_1">Chuyên sâu</string>
+  <string name="meaning_word_2">Cung ứng, cung cấp</string>
+  <string name="meaning_word_3">Phá hủy, phá hỏng</string>
+  <string name="meaning_word_4">Sảnh chờ</string>
+  <string name="correct_answer_context">CORRECT ANSWER:</string>
+  <string name="you_said_context">YOU SAID:</string>
+  <string name="type_the_definition">TYPE THE DEFINITION</string>
+  <string name="copy_correct_answer">COPY THE CORRECT ANSWER</string>
+  <string name="skip">Skip</string>
+  <string name="was_correct">I was correct</string>
+  <!-- TODO: Remove or change this placeholder text -->
+</resources>
