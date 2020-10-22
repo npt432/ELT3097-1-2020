@@ -1,7 +1,19 @@
-Tiến độ dự án tuần 5:
+Ứng dụng Quizlet
 
 Nguyễn Phúc Tuấn:
-![Nguyễn Phúc Tuấn](https://i.imgur.com/StfDiy1.gif)
+![Nguyễn Phúc Tuấn](https://i.imgur.com/575lpEP.gif)
+
+Class Java: 
+https://github.com/npt432/ELT3097-1-2020/blob/master/31/Quizlet/app/src/main/java/uet/vnu/quizlet/MainActivity.java
+https://github.com/npt432/ELT3097-1-2020/blob/master/31/Quizlet/app/src/main/java/uet/vnu/quizlet/LearnActivity.java
+https://github.com/npt432/ELT3097-1-2020/blob/master/31/Quizlet/app/src/main/java/uet/vnu/quizlet/LearnRightAnswerFragment.java
+https://github.com/npt432/ELT3097-1-2020/blob/master/31/Quizlet/app/src/main/java/uet/vnu/quizlet/LearnWrongAnswerFragment.java
+
+Layout xml:
+https://github.com/npt432/ELT3097-1-2020/blob/master/31/Quizlet/app/src/main/res/layout/activity_learn.xml
+https://github.com/npt432/ELT3097-1-2020/blob/master/31/Quizlet/app/src/main/res/layout/activity_main.xml
+https://github.com/npt432/ELT3097-1-2020/blob/master/31/Quizlet/app/src/main/res/layout/fragment_learn_right_answer.xml
+https://github.com/npt432/ELT3097-1-2020/blob/master/31/Quizlet/app/src/main/res/layout/fragment_learn_wrong_answer.xml
 
 Doãn Công Tuyến:
 ![Doãn Công Tuyến](https://i.imgur.com/JZQWCwo.gif)
