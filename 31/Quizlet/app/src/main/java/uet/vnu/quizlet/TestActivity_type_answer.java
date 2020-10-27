@@ -15,7 +15,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class TestActivity_write extends AppCompatActivity {
+public class TestActivity_type_answer extends AppCompatActivity {
 
     ImageButton Ibutton_back;
     Button button_toikhongbiet;
@@ -26,7 +26,7 @@ public class TestActivity_write extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test_write);
+        setContentView(R.layout.activity_test_type_answer);
 
 
 
@@ -34,7 +34,7 @@ public class TestActivity_write extends AppCompatActivity {
         Ibutton_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent backScreen = new Intent(TestActivity_write.this, TestActivity_true_false.class);
+                Intent backScreen = new Intent(TestActivity_type_answer.this, TestActivity_choose_answer_true_false.class);
                 startActivity(backScreen);
             }
         });
@@ -43,7 +43,7 @@ public class TestActivity_write extends AppCompatActivity {
         button_toikhongbiet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent nextScreen = new Intent(TestActivity_write.this, TestActivity_selection.class);
+                Intent nextScreen = new Intent(TestActivity_type_answer.this, TestActivity_choose_answer.class);
                 startActivity(nextScreen);
             }
         });
@@ -60,7 +60,7 @@ public class TestActivity_write extends AppCompatActivity {
         answer.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                Intent intent = new Intent(TestActivity_write.this, TestActivity_selection.class);
+                Intent intent = new Intent(TestActivity_type_answer.this, TestActivity_choose_answer.class);
                 startActivity(intent);
                 return false;
             }
