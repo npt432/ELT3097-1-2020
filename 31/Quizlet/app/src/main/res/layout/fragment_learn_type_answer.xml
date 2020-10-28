@@ -28,7 +28,7 @@
     app:layout_constraintBottom_toBottomOf="parent" />
 
   <TextView
-    android:id="@+id/textView2"
+    android:id="@+id/textViewVehicle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/type_the_definition"
@@ -38,7 +38,7 @@
     app:layout_constraintTop_toBottomOf="@+id/editText" />
 
   <TextView
-    android:id="@+id/textView"
+    android:id="@+id/textViewXeco"
     android:layout_width="wrap_content"
     android:layout_height="30dp"
     android:textColor="@color/colorAccent"
