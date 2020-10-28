@@ -19,7 +19,7 @@ public class TestActivity_choose_answer_true_false extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_choose_answer_true_false);
 
-        button_true = (Button) findViewById(R.id.button);
+        button_true = (Button) findViewById(R.id.buttonTrue);
         button_true.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,7 +28,7 @@ public class TestActivity_choose_answer_true_false extends AppCompatActivity {
             }
         });
 
-        button_false = (Button)findViewById(R.id.button2);
+        button_false = (Button)findViewById(R.id.buttonFalse);
         button_false.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

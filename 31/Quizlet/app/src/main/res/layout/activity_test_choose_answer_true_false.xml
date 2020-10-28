@@ -7,7 +7,7 @@
     tools:context=".TestActivity_choose_answer_true_false">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonTrue"
         android:layout_width="180dp"
         android:layout_height="60dp"
         android:layout_marginStart="20dp"
@@ -18,13 +18,13 @@
         android:text="Đúng"
         android:textColor="#FFFFFF"
         android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonFalse"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button2" />
+        app:layout_constraintTop_toTopOf="@+id/buttonFalse" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonFalse"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="225dp"
@@ -41,7 +41,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewXeco"
         android:layout_width="90dp"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
@@ -54,7 +54,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewVehicle"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginBottom="260dp"
@@ -62,8 +62,8 @@
         android:textColor="#000000"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textViewXeco"
+        app:layout_constraintTop_toBottomOf="@+id/textViewXeco"
         app:layout_constraintVertical_bias="0.069" />
 
     <ProgressBar
@@ -75,14 +75,14 @@
         android:layout_marginRight="20dp"
         android:progress="0"
         android:progressDrawable="@drawable/progressbar_custom"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonBack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-        app:layout_constraintTop_toTopOf="@+id/imageButton2" />
+        app:layout_constraintStart_toEndOf="@+id/imageButtonBack"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonBack" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/imageButtonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -94,6 +94,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_toolbar_back" />
+        android:src="@drawable/ic_toolbar_back" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

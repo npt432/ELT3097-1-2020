@@ -7,7 +7,7 @@
     tools:context=".TestActivity_choose_answer">
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/imageButtonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -19,7 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_toolbar_back" />
+        android:src="@drawable/ic_toolbar_back" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -30,11 +30,11 @@
         android:layout_marginRight="20dp"
         android:progress="40"
         android:progressDrawable="@drawable/progressbar_custom"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonBack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-        app:layout_constraintTop_toTopOf="@+id/imageButton2" />
+        app:layout_constraintStart_toEndOf="@+id/imageButtonBack"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonBack" />
 
     <TextView
         android:id="@+id/textView17"
@@ -46,36 +46,36 @@
         android:text="vehicle"
         android:textColor="#000000"
         android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintBottom_toTopOf="@+id/buttonreturn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonBack" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/button_true_false_custom"
         android:text="eat"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/buttonreturn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="575dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/button_true_false_custom"
         android:text="vehicle"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
