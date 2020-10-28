@@ -15,6 +15,9 @@
         <activity android:name=".TestActivity_choose_answer_true_false" />
         <activity android:name=".TestActivity" />
         <activity android:name=".LearnActivity" />
+        <activity android:name=".WriteActivity" />
+        <activity android:name=".WriteCorrectActivity" />
+        <activity android:name=".WriteIncorrectActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

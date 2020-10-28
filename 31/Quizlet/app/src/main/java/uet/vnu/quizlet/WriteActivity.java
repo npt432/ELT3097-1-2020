@@ -52,7 +52,7 @@ public class WriteActivity extends AppCompatActivity {
 
     public void correctAnswer() {
         String str = "dm";
-        editTextDataEntry.setText(str,String);// set lai editText
+       // editTextDataEntry.setText(str,String);// set lai editText
         Intent intent =new Intent(WriteActivity.this,WriteCorrectActivity.class);
         startActivity(intent);
     }
