@@ -37,7 +37,7 @@ public class TestActivity_choose_answer_true_false extends AppCompatActivity {
             }
         });
 
-        Ibutton_back = (ImageButton)findViewById(R.id.imageButton2);
+        Ibutton_back = (ImageButton)findViewById(R.id.imageButtonBack);
         Ibutton_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

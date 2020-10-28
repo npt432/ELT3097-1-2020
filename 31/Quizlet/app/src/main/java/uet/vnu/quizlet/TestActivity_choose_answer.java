@@ -18,7 +18,7 @@ public class TestActivity_choose_answer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_choose_answer);
 
-        Ibutton_back = (ImageButton)findViewById(R.id.imageButton2);
+        Ibutton_back = (ImageButton)findViewById(R.id.imageButtonBack);
         Ibutton_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
