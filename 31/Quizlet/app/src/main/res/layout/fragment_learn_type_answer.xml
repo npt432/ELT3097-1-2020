@@ -20,7 +20,7 @@
     tools:layout_editor_absoluteY="248dp" />
 
   <EditText
-    android:id="@+id/editText"
+    android:id="@+id/answerEditText"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="50dp"
@@ -28,17 +28,17 @@
     app:layout_constraintBottom_toBottomOf="parent" />
 
   <TextView
-    android:id="@+id/textViewVehicle"
+    android:id="@+id/guideTextView"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/type_the_definition"
     android:layout_marginLeft="16dp"
     android:textColor="@color/colorGray"
     app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/editText" />
+    app:layout_constraintTop_toBottomOf="@+id/answerEditText" />
 
   <TextView
-    android:id="@+id/textViewXeco"
+    android:id="@+id/dontKnowTextView"
     android:layout_width="wrap_content"
     android:layout_height="30dp"
     android:textColor="@color/colorAccent"
