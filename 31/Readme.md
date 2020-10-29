@@ -34,3 +34,14 @@ https://github.com/npt432/ELT3097-1-2020/blob/master/31/Quizlet/app/src/main/res
 
 Trương Thị Cẩm Nhung:
 https://drive.google.com/file/d/1aumOj_fguDmHSkAAArAS_CUqe8qlxjLE/view?fbclid=IwAR38BrI6tr9LjoKbgnGK_8pHK48VONWNcUbjsVgJR8_geU9N-8bkCj3SZrE
+
+Class Java:
+https://github.com/npt432/ELT3097-1-2020/blob/master/31/Quizlet/app/src/main/java/uet/vnu/quizlet/WriteActivity.java
+https://github.com/npt432/ELT3097-1-2020/blob/master/31/Quizlet/app/src/main/java/uet/vnu/quizlet/WriteCorrectActivity.java
+https://github.com/npt432/ELT3097-1-2020/blob/master/31/Quizlet/app/src/main/java/uet/vnu/quizlet/WriteIncorrectActivity.java
+https://github.com/npt432/ELT3097-1-2020/blob/master/31/Quizlet/app/src/main/java/uet/vnu/quizlet/DontKnowActivity.java
+
+Layout xml:
+https://github.com/npt432/ELT3097-1-2020/blob/master/31/Quizlet/app/src/main/res/layout/activity_write.xml
+https://github.com/npt432/ELT3097-1-2020/blob/master/31/Quizlet/app/src/main/res/layout/activity_write_correct.xml
+https://github.com/npt432/ELT3097-1-2020/blob/master/31/Quizlet/app/src/main/res/layout/activity_write_incorrect.xml
