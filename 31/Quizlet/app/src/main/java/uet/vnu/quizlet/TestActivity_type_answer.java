@@ -39,7 +39,7 @@ public class TestActivity_type_answer extends AppCompatActivity {
             }
         });
 
-        button_toikhongbiet = (Button)findViewById(R.id.button3);
+        button_toikhongbiet = (Button)findViewById(R.id.buttonIdontknow);
         button_toikhongbiet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

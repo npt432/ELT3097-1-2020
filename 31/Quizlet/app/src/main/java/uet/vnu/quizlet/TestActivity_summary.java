@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 public class TestActivity_summary extends AppCompatActivity {
 
     ImageButton Ibutton_back;
-    Button button_return;
+    Button button_retake;
 
 
     @Override
@@ -28,8 +28,8 @@ public class TestActivity_summary extends AppCompatActivity {
             }
         });
 
-        button_return = (Button)findViewById(R.id.button3);
-        button_return.setOnClickListener(new View.OnClickListener() {
+        button_retake = (Button)findViewById(R.id.buttonIdontknow);
+        button_retake.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent nextScreen = new Intent(TestActivity_summary.this, TestActivity.class);
