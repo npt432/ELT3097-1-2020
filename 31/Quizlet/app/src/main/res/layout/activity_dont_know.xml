@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="25"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="18"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButtonClose"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription=""
+            android:paddingLeft="2dp"
+
+            android:src="@drawable/closebutton" />
+
+        <ProgressBar
+            android:id="@+id/progressBarProgressRegister"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="12dp"
+            android:layout_weight="16"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progressbarcustom"
+            android:scrollbarSize="@android:dimen/app_icon_size"
+            android:secondaryProgressTintMode="screen" />
+
+        <ImageButton
+            android:id="@+id/imageButtonAdjust"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/adjust" />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ăn"
+        android:textColor="#353532"
+        android:textSize="32dp"
+        android:id="@+id/textViewWordInput"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĐÁP ÁN ĐÚNG"
+        android:textSize="11dp"
+        android:layout_weight="1"
+        android:textColor="#27AA03"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eat"
+        android:layout_weight="1"
+        android:id="@+id/textViewRightAnswer"
+        android:textSize="15dp"
+        android:textColor="#191717"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="19"
+        />
+
+    <EditText
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_gravity="bottom"
+        android:textSize="25sp"
+        android:ems="10"
+        android:id="@+id/editTextDataEntry" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="top"
+        android:background="#F43636"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Chép lại đáp án đúng"
+        android:id="@+id/textViewRequire"
+        android:textColor="#F43636"
+        android:textSize="11sp"/>
+</LinearLayout>
