@@ -39,10 +39,9 @@
             android:layout_marginHorizontal="12dp"
             android:layout_weight="16"
             android:max="100"
-            android:progress="50"
+            android:progress="0"
             android:progressDrawable="@drawable/progressbarcustom"
             android:scrollbarSize="@android:dimen/app_icon_size"
-            android:secondaryProgress="100"
             android:secondaryProgressTintMode="screen" />
 
         <ImageButton
@@ -63,21 +62,22 @@
         android:text="Ăn"
         android:textColor="#353532"
         android:textSize="32dp"
-        android:id="@+id/tvWordInput"
+        android:id="@+id/textViewWordInput"
         />
+
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ĐÁP ÁN CỦA BẠN"
+        android:layout_height="25dp"
         android:layout_weight="1"
-        android:textSize="11dp"
-        android:textColor="#F43636"/>
+        android:text="ĐÁP ÁN CỦA BẠN"
+        android:textColor="#F43636"
+        android:textSize="11dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:textSize="15dp"
-        android:id="@+id/tvWrongAnswer"
+        android:id="@+id/textViewWrongAnswer"
         android:textColor="#1C1B1B"/>
     <TextView
         android:layout_width="wrap_content"
@@ -89,9 +89,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Converge"
+        android:text="Eat"
         android:layout_weight="1"
-        android:id="@+id/tvRightAnswer"
+        android:id="@+id/textViewRightAnswer"
         android:textSize="15dp"
         android:textColor="#191717"/>
     <TextView
@@ -99,18 +99,6 @@
         android:layout_height="wrap_content"
         android:layout_weight="17"
         />
-
-    <Button
-        android:text="Đáp án"
-        android:id="@+id/buttonCheck"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00D9FF"
-        android:textColor="#FAFAF5"
-        android:textSize="20dp"
-        android:layout_gravity="end|bottom" />
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -118,7 +106,7 @@
         android:orientation="horizontal"
         android:weightSum="7">
         <EditText
-            android:layout_weight="5"
+            android:layout_weight="4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -129,12 +117,13 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Không biết"
-            android:id="@+id/buttonHint"
+            android:text="Tôi đã trả lời đúng"
+            android:id="@+id/buttonRight"
+            android:gravity="right|bottom"
             android:background="@android:color/transparent"
             android:layout_gravity="bottom|end"
             android:textSize="11sp"
-            android:layout_weight="2"
+            android:layout_weight="3"
             android:textColor="#A800BCD4"/>
 
     </LinearLayout>
@@ -144,12 +133,13 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_gravity="top"
-        android:background="#E4EC05"/>
+        android:background="#F43636"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_weight="1"
         android:layout_height="wrap_content"
-        android:hint="Nhập tiếng anh"
+        android:text="Chép lại đáp án đúng"
         android:id="@+id/textViewRequire"
+        android:textColor="#F43636"
         android:textSize="11sp"/>
 </LinearLayout>
