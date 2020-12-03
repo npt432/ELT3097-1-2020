@@ -1,53 +1,86 @@
 package uet.vnu.quizlet;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
+import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayout.OnTabSelectedListener;
+import com.google.android.material.tabs.TabLayout.Tab;
 
 public class MainActivity extends AppCompatActivity {
+  private TabLayout tabLayout;
+  private int previousPosition;
 
-  Button learnButton;
-  Button flashCardButton;
-  Button writeButton;
-  Button matchButton;
-  Button testButton;
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-    learnButton = (Button) findViewById(R.id.learnButton);
-    flashCardButton = (Button) findViewById(R.id.flashCardButton);
-    writeButton = (Button) findViewById(R.id.writeButton);
-    matchButton = (Button) findViewById(R.id.matchButton);
-    testButton = (Button) findViewById(R.id.testButton);
-
-    learnButton.setOnClickListener(new OnClickListener() {
+    tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+    previousPosition = tabLayout.getSelectedTabPosition();
+    addFragment(tabLayout.getSelectedTabPosition());
+    tabLayout.addOnTabSelectedListener(new OnTabSelectedListener() {
       @Override
-      public void onClick(View v) {
-        Intent learnActivity = new Intent(MainActivity.this, LearnActivity.class);
-        startActivity(learnActivity);
+      public void onTabSelected(Tab tab) {
+        int position = tab.getPosition();
+        if(position != 2){
+          Log.e("pre1",""+previousPosition);
+          previousPosition = position;
+          Log.e("pre2",""+previousPosition);
+          addFragment(position);
+        }
+        else{
+          tabLayout.getTabAt(previousPosition).select();
+          Log.e("pre3",""+previousPosition);
+          toggleBottomSheet();
+        }
+
+      }
+
+      @Override
+      public void onTabUnselected(Tab tab) {
+
+      }
+
+      @Override
+      public void onTabReselected(Tab tab) {
+
       }
     });
 
-    writeButton.setOnClickListener(new OnClickListener() {
-      @Override
-      public void onClick(View v) {
-        Intent writeActivity = new Intent(MainActivity.this, WriteActivity.class);
-        startActivity(writeActivity);
-      }
-    });
 
-    testButton.setOnClickListener(new OnClickListener() {
-      @Override
-      public void onClick(View v) {
-        Intent testActivity = new Intent(MainActivity.this, TestActivity.class);
-        startActivity(testActivity);
-      }
-    });
+  }
 
+  private void toggleBottomSheet() {
+    CreateBottomSheet createBottomSheet = new CreateBottomSheet();
+    createBottomSheet.show(getSupportFragmentManager(),"tag");
+  }
+
+  public void addFragment(int position){
+    Log.e("pos",""+position);
+    FragmentManager fragmentManager = getSupportFragmentManager();
+    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+    Fragment fragment = null;
+    switch (position){
+      case 0:
+        Log.e("tag","0");
+        fragment = new HomeFragment();
+        break;
+      case 1:
+        Log.e("tag","1");
+        fragment = new SearchFragment();
+        break;
+      case 3:
+        Log.e("tag","3");
+        fragment = new AccountFragment();
+        break;
+      default:
+        Log.e("tag","df");
+        break;
+    }
+    fragmentTransaction.add(R.id.frameLayout,fragment).commit();
   }
 }

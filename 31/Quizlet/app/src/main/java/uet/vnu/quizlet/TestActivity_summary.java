@@ -28,7 +28,7 @@ public class TestActivity_summary extends AppCompatActivity {
             }
         });
 
-        button_retake = (Button)findViewById(R.id.buttonIdontknow);
+        button_retake = (Button)findViewById(R.id.buttonRetake);
         button_retake.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

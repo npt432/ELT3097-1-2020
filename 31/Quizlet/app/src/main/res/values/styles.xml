@@ -5,6 +5,28 @@
     <item name="colorPrimary">@color/colorPrimary</item>
     <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
     <item name="colorAccent">@color/colorAccent</item>
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="GoogleSignInButton">
+    <item name="android:background">@drawable/sign_in_auth</item>
+    <item name="android:drawableLeft">@drawable/googleg_standard_color_18</item>
+    <item name="android:paddingLeft">16dp</item>
+    <item name="android:text">"Google"</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="fontFamily">@font/hurmes_bold</item>
+    <item name="android:textSize">12dp</item>
+  </style>
+
+  <style name="FacebookLoginButton">
+    <item name="android:background">@drawable/sign_in_auth</item>
+    <item name="android:drawableLeft">@drawable/ic_facebook_24dp</item>
+    <item name="android:paddingLeft">16dp</item>
+    <item name="android:text">"Facebook"</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="fontFamily">@font/hurmes_bold</item>
+    <item name="android:textSize">12dp</item>
   </style>
 
 </resources>

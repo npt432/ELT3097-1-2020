@@ -1,15 +1,13 @@
 package uet.vnu.quizlet;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class WriteIncorrectActivity extends AppCompatActivity {
     TextView textViewWrongAnswer;
@@ -22,9 +20,9 @@ public class WriteIncorrectActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_write_incorrect);
         textViewRightAnswer = (TextView) findViewById(R.id.textViewRightAnswer);
-        textViewWrongAnswer =  (TextView) findViewById(R.id.textViewWrongAnswer);
+        textViewWrongAnswer =  (TextView) findViewById(R.id.tvWrongAnswer);
         editTextDataEntry = (EditText) findViewById(R.id.editTextDataEntry);
-        buttonRight = (Button) findViewById(R.id.buttonRight);
+        //buttonRight = (Button) findViewById(R.id.buttonRight);
         progressBarProgressRegister = (ProgressBar) findViewById(R.id.progressBarProgressRegister);
         // lay gia tri progress bar hien tai
         Intent pbCurrent = getIntent();
@@ -52,19 +50,19 @@ public class WriteIncorrectActivity extends AppCompatActivity {
             }
         });
         // Tu nhap vao da dung nhung khong giong voi dap an
-        buttonRight.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                // tang progress bar
-                int current = progressBarProgressRegister.getProgress();
-                progressBarProgressRegister.setProgress( current +20);
-                //chuyen activity
-                Intent intent = new Intent (WriteIncorrectActivity.this, WriteActivity.class);
-                //chuyen progress bar vao write
-                int current1  = progressBarProgressRegister.getProgress();
-                intent.putExtra("progressBarCurrent",current1);
-                startActivity(intent);
-            }
-        });
+//        buttonRight.setOnClickListener(new View.OnClickListener(){
+//            public void onClick(View v){
+//                // tang progress bar
+//                int current = progressBarProgressRegister.getProgress();
+//                progressBarProgressRegister.setProgress( current +20);
+//                //chuyen activity
+//                Intent intent = new Intent (WriteIncorrectActivity.this, WriteActivity.class);
+//                //chuyen progress bar vao write
+//                int current1  = progressBarProgressRegister.getProgress();
+//                intent.putExtra("progressBarCurrent",current1);
+//                startActivity(intent);
+//            }
+//        });
 
     }
 
