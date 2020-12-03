@@ -15,6 +15,7 @@ public class WriteIncorrectActivity extends AppCompatActivity {
     EditText editTextDataEntry;
     Button buttonRight;
     ProgressBar progressBarProgressRegister;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
