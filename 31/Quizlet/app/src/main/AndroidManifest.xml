@@ -1,30 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="uet.vnu.quizlet">
+  xmlns:tools="http://schemas.android.com/tools"
+  package="uet.vnu.quizlet">
 
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".TestActivity_summary"></activity>
-        <activity android:name=".TestActivity_type_answer" />
-        <activity android:name=".TestActivity_choose_answer" />
-        <activity android:name=".TestActivity_choose_answer_true_false" />
-        <activity android:name=".TestActivity" />
-        <activity android:name=".LearnActivity" />
-        <activity android:name=".WriteActivity" />
-        <activity android:name=".WriteCorrectActivity" />
-        <activity android:name=".WriteIncorrectActivity"/>
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.Design.Light.NoActionBar">
+    <activity android:name=".SetOptionActivity"></activity>
+    <activity android:name=".CreateClassActivity" />
+    <activity android:name=".CreateFolderActivity" />
+    <activity android:name=".CreateSetActivity" />
+    <activity
+      android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+      android:label="@string/app_name"
+      android:name="com.facebook.FacebookActivity" />
+    <activity
+      android:exported="true"
+      android:name="com.facebook.CustomTabActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+
+        <data android:scheme="@string/fb_login_protocol_scheme" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".SignUpActivity" />
+    <activity android:name=".SignInActivity" />
+    <activity android:name=".IntroActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:name=".MainActivity" />
+    <activity android:name=".TestActivity_summary" />
+    <activity android:name=".TestActivity_type_answer" />
+    <activity android:name=".TestActivity_choose_answer" />
+    <activity android:name=".TestActivity_choose_answer_true_false" />
+    <activity android:name=".TestActivity" />
+    <activity android:name=".LearnActivity" />
+    <activity android:name=".WriteActivity" />
+    <activity android:name=".WriteCorrectActivity" />
+    <activity android:name=".WriteIncorrectActivity" />
+    <activity android:name=".SetSelectedActivity" />
+
+    <meta-data
+      android:name="com.facebook.sdk.ApplicationId"
+      android:value="@string/facebook_app_id"
+      tools:replace="android:value" />
+  </application>
+
+  <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

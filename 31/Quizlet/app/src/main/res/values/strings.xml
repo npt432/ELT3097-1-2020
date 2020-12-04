@@ -1,21 +1,65 @@
 <resources>
-    <string name="app_name">Quizlet</string>
-    <string name="wrong_content">INCORRECT</string>
-    <string name="right_content">Nicely Done</string>
-    <string name="continue_key">Continue</string>
-    <string name="word_1">Extensive</string>
-    <string name="word_2">Supply</string>
-    <string name="word_3">Damage</string>
-    <string name="word_4">Lobby</string>
-    <string name="meaning_word_1">Chuyên sâu</string>
-    <string name="meaning_word_2">Cung ứng, cung cấp</string>
-    <string name="meaning_word_3">Phá hủy, phá hỏng</string>
-    <string name="meaning_word_4">Sảnh chờ</string>
-    <string name="correct_answer_context">CORRECT ANSWER:</string>
-    <string name="you_said_context">YOU SAID:</string>
-    <string name="type_the_definition">TYPE THE DEFINITION</string>
-    <string name="copy_correct_answer">COPY THE CORRECT ANSWER</string>
-    <string name="skip">Skip</string>
-    <string name="was_correct">I was correct</string>
-    <!-- TODO: Remove or change this placeholder text -->
+  <string name="app_name">Quizlet</string>
+  <string name="wrong_content">INCORRECT</string>
+  <string name="right_content">Nicely Done</string>
+  <string name="continue_key">Continue</string>
+  <string name="word_1">Extensive</string>
+  <string name="word_2">Supply</string>
+  <string name="word_3">Damage</string>
+  <string name="word_4" translatable="false">Lobby</string>
+  <string name="meaning_word_1">Chuyên sâu</string>
+  <string name="meaning_word_2">Cung ứng, cung cấp</string>
+  <string name="meaning_word_3">Phá hủy, phá hỏng</string>
+  <string name="meaning_word_4">Sảnh chờ</string>
+  <string name="correct_answer_context">CORRECT ANSWER:</string>
+  <string name="you_said_context">YOU SAID:</string>
+  <string name="type_the_definition">TYPE THE DEFINITION</string>
+  <string name="copy_correct_answer">COPY THE CORRECT ANSWER</string>
+  <string name="skip">Skip</string>
+  <string name="was_correct">I was correct</string>
+  <string name="facebook_app_id">824337815033778</string>
+  <string name="fb_login_protocol_scheme">fb824337815033778</string>
+  <string name="sign_up_intro" translatable="false">Sign up for free</string>
+  <string name="sign_in_intro">Or log in</string>
+  <string name="intro1">Over 90% of studens who use Quizlet report higher grades.</string>
+  <string name="intro2">Learn in five different ways.</string>
+  <string name="intro3">Find the best study material for what you\'re learning.</string>
+  <string name="intro4">Easily create your own study material.</string>
+  <string name="quick_login">Quickly log in with</string>
+  <string name="sign_up_sign_up">or sign up with a username</string>
+  <string name="sign_up_date_hint">Dec 1, 2020</string>
+  <string name="sign_up_email_hint">email@example.com</string>
+  <string name="sign_up_username_hint">Create a username</string>
+  <string name="sign_up_password_hint">Password</string>
+  <string name="sign_up_date_of_birth">date of birth</string>
+  <string name="sign_up_email">email address</string>
+  <string name="sign_up_username">username</string>
+  <string name="sign_up_password">password</string>
+  <string name="sign_up_button">Sign up</string>
+  <string name="sign_in_username">username</string>
+  <string name="sign_in_username_hint">Enter your username</string>
+  <string name="sign_in_login">or login with your username</string>
+  <string name="sign_in_password">password</string>
+  <string name="sign_in_password_hint">Enter your password</string>
+  <string name="sign_in_button">Log in</string>
+  <string name="sign_in_forgot">Forgot</string>
+  <string name="sign_in_forgot_username">username</string>
+  <string name="sign_in_forgot_or">or</string>
+  <string name="sign_in_forgot_password">password</string>
+  <string name="sign_in_forgot_endline">\?</string>
+  <string name="home">Home</string>
+  <string name="sets">Sets</string>
+  <string name="create_set">Create study set</string>
+  <string name="create_folder">Create folder</string>
+  <string name="create_class">Create class</string>
+  <string name="create_set_actionbar_title">Create set</string>
+  <string name="create_set_title">title</string>
+  <string name="create_set_title_hint">Subject, chapter, unit</string>
+  <string name="create_set_description">Description</string>
+  <string name="create_set_scan">Scan document</string>
+  <string name="create_set_term">term</string>
+  <string name="create_set_definition">definition</string>
+
+
+  <!-- TODO: Remove or change this placeholder text -->
 </resources>

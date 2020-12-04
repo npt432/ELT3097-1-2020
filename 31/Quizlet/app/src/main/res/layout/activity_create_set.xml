@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  app:layoutDescription="@xml/activity_create_set_scene"
+  tools:context=".CreateSetActivity">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:background="@color/design_default_color_primary_variant"
+      android:weightSum="10">
+
+      <ImageButton
+        android:id="@+id/backImageButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:paddingLeft="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_arrow_back_white_24dp" />
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:layout_gravity="center"
+        android:paddingLeft="40dp"
+        android:fontFamily="@font/hurmes_semibold"
+        android:text="@string/create_set_actionbar_title"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp" />
+      <ImageButton
+        android:id="@+id/settingImageButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:paddingLeft="20dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_settings_white" />
+      <ImageButton
+        android:id="@+id/createSetImageButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:paddingRight="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_check_white_24dp" />
+
+    </LinearLayout>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/text_margin"
+      android:orientation="vertical">
+      <EditText
+        android:id="@+id/createSetTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/text_margin"
+        android:hint="@string/create_set_title_hint" />
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/text_margin"
+        android:paddingLeft="4dp"
+        android:text="@string/create_set_title"
+        android:textAllCaps="true"
+        android:textColor="@color/colorGray30" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/text_margin"
+      android:layout_marginBottom="@dimen/text_margin"
+      android:orientation="horizontal"
+      android:weightSum="2">
+      <TextView
+        android:id="@+id/scanTextView"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:drawableLeft="@drawable/ic_scan_document"
+        android:gravity="center"
+        android:text="@string/create_set_scan"
+        android:textColor="@color/colorTear" />
+      <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="@dimen/text_margin"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/ic_add_tear"
+        android:gravity="right"
+        android:text="@string/create_set_description"
+        android:textColor="@color/colorTear" />
+    </LinearLayout>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/colorLightGray">
+      <androidx.recyclerview.widget.RecyclerView
+        android:paddingHorizontal="@dimen/text_margin"
+        android:id="@+id/createSetInputRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/floatingButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/colorTear"
+    android:src="@drawable/ic_add_white"
+    android:layout_margin="16dp"
+    android:layout_gravity="bottom|end"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

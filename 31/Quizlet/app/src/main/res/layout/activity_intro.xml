@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/colorWhite"
+  tools:context=".IntroActivity">
+
+  <androidx.viewpager.widget.ViewPager
+    android:id="@+id/viewPager"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    app:layout_constraintBottom_toTopOf="@+id/layoutDots"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/quizletIcon" />
+
+  <Button
+    android:id="@+id/signUpButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="24dp"
+    android:background="@drawable/button_corners"
+    android:fontFamily="@font/hurmes_semibold"
+    android:text="@string/sign_up_intro"
+    android:textAllCaps="false"
+    android:textColor="@color/colorWhite"
+    android:textSize="16dp"
+    app:layout_constraintBottom_toTopOf="@+id/signInButton"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+    android:id="@+id/signInButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp"
+    android:layout_marginHorizontal="24dp"
+    android:background="@color/fui_transparent"
+    android:fontFamily="@font/hurmes_semibold"
+    android:text="@string/sign_in_intro"
+    android:textAllCaps="false"
+    android:textColor="@color/colorTear"
+    android:textSize="16dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <ImageView
+    android:id="@+id/quizletIcon"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:src="@drawable/quizlet_logo"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <LinearLayout
+    android:id="@+id/layoutDots"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:layout_marginBottom="100dp"
+    android:layout_alignParentBottom="true"
+    android:gravity="center"
+    android:orientation="horizontal"
+    app:layout_constraintBottom_toTopOf="@+id/signUpButton"
+    app:layout_constraintTop_toTopOf="@+id/guideline2">
+
+    <ImageView
+      android:id="@+id/dot1"
+      android:layout_width="10dp"
+      android:layout_height="10dp"
+      android:layout_marginHorizontal="5dp"/>
+
+    <ImageView
+      android:id="@+id/dot2"
+      android:layout_width="10dp"
+      android:layout_height="10dp"
+      android:layout_marginHorizontal="5dp" />
+
+    <ImageView
+      android:id="@+id/dot3"
+      android:layout_width="10dp"
+      android:layout_height="10dp"
+      android:layout_marginHorizontal="5dp" />
+
+    <ImageView
+      android:id="@+id/dot4"
+      android:layout_width="10dp"
+      android:layout_height="10dp"
+      android:layout_marginHorizontal="5dp" />
+  </LinearLayout>
+
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_begin="205dp" />
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_begin="535dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,6 +24,7 @@ public class MainActivity1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent nextScreen = new Intent(MainActivity1.this, MainActivity2.class);
+                nextScreen.putExtra("progressbar", 0);
                 startActivity(nextScreen);
             }
         });

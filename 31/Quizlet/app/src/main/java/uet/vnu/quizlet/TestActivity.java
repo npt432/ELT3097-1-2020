@@ -38,7 +38,7 @@ private Class[] classes = new Class[3];
         Ibutton_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent backScreen = new Intent(TestActivity.this, MainActivity.class);
+                Intent backScreen = new Intent(TestActivity.this, SetSelectedActivity.class);
                 startActivity(backScreen);
             }
         });

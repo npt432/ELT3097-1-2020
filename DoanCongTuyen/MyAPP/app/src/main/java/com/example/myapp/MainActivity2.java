@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,6 +22,7 @@ public class MainActivity2 extends AppCompatActivity {
     ImageButton Ibutton_back;
     Button button_toikhongbiet;
     EditText dapAn;
+    ProgressBar vlaue_progressbar;
 
     @SuppressLint("ClickableViewAccessibility")
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -29,8 +31,10 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-
-
+        vlaue_progressbar = (ProgressBar)findViewById(R.id.progressBar);
+        Intent value = getIntent();
+        vlaue_progressbar.setProgress(value);
+        final int value_progressbar = value.getIntExtra("progressbar", 0);
         Ibutton_back = (ImageButton)findViewById(R.id.imageButton2);
         Ibutton_back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +49,7 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                  Intent nextScreen = new Intent(MainActivity2.this, MainActivity3.class);
-                startActivity(nextScreen);
+                 startActivity(nextScreen);
             }
         });
 
