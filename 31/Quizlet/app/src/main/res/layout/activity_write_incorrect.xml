@@ -67,13 +67,8 @@
 
     <TextView
         android:layout_width="wrap_content"
-<<<<<<< HEAD
         android:layout_height="wrap_content"
-        android:text="ĐÁP ÁN CỦA BẠN"
         android:id="@+id/textViewWrongAnswer"
-=======
-        android:layout_height="25dp"
->>>>>>> refs/remotes/origin/master
         android:layout_weight="1"
         android:text="ĐÁP ÁN CỦA BẠN"
         android:textColor="#F43636"
@@ -83,7 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:textSize="15dp"
-        android:id="@+id/textViewWrongAnswer"
+        android:id="@+id/textViewCurrentAnswer"
         android:textColor="#1C1B1B"/>
     <TextView
         android:layout_width="wrap_content"
