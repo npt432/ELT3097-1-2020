@@ -13,13 +13,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class TestActivity_type_answer extends AppCompatActivity {
 
+    EditText answer;
     ImageButton Ibutton_back;
     Button button_toikhongbiet;
-    EditText answer;
+    ProgressBar progressBarRegister;
 
     @SuppressLint("ClickableViewAccessibility")
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -28,7 +30,10 @@ public class TestActivity_type_answer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_type_answer);
 
-
+        progressBarRegister = (ProgressBar) findViewById(R.id.progressBarRegister);
+        Intent intent = getIntent();
+        int data = intent.getIntExtra("progressBarCurrent",0);
+        progressBarRegister.setProgress(data);
 
         Ibutton_back = (ImageButton)findViewById(R.id.imageButtonBack);
         Ibutton_back.setOnClickListener(new View.OnClickListener() {
@@ -44,6 +49,8 @@ public class TestActivity_type_answer extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent nextScreen = new Intent(TestActivity_type_answer.this, TestActivity_choose_answer.class);
+                int current  = progressBarRegister.getProgress();
+                nextScreen.putExtra("progressBarCurrent",current);
                 startActivity(nextScreen);
             }
         });
@@ -60,8 +67,10 @@ public class TestActivity_type_answer extends AppCompatActivity {
         answer.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                Intent intent = new Intent(TestActivity_type_answer.this, TestActivity_choose_answer.class);
-                startActivity(intent);
+                Intent nextScreen = new Intent(TestActivity_type_answer.this, TestActivity_choose_answer.class);
+                int current  = progressBarRegister.getProgress();
+                nextScreen.putExtra("progressBarCurrent",current);
+                startActivity(nextScreen);
                 return false;
             }
         });

@@ -5,9 +5,9 @@
             <corners android:radius="20dp"/>
             <size android:height="60dp"
                 android:width="170dp"/>
-            <stroke android:color="@color/colorAccent"
+            <stroke android:color="@color/colorTear"
                 android:width="2dp"/>
-            <solid android:color="@color/colorAccent"/>
+            <solid android:color="@color/colorTear"/>
         </shape>
     </item>
     <item>
@@ -15,9 +15,9 @@
             <corners android:radius="10dp"/>
             <size android:height="60dp"
                 android:width="170dp"/>
-            <stroke android:color="@color/colorAccent"
+            <stroke android:color="@color/colorTear"
                 android:width="2dp"/>
-            <solid android:color="@color/colorAccent"/>
+            <solid android:color="@color/colorTear"/>
         </shape>
     </item>
 </selector>

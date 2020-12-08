@@ -22,7 +22,7 @@
         android:src="@drawable/ic_toolbar_back" />
 
     <ProgressBar
-        android:id="@+id/progressBar"
+        android:id="@+id/progressBarRegister"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="0dp"
         android:layout_height="10dp"
@@ -41,39 +41,64 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginTop="135dp"
         android:layout_marginEnd="298dp"
         android:text="Xe cộ"
-        android:textColor="#000000"
+        android:textColor="@color/colorBlack"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButtonBack" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/buttonAnswer4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/button_true_false_custom"
-        android:text="eat"
+        android:background="@drawable/button_test_custom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/buttonRetake"
+        android:id="@+id/buttonAnswer1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/button_true_false_custom"
-        android:text="vehicle"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
+        android:background="@drawable/button_test_custom"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAnswer2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAnswer3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_test_custom"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAnswer4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAnswer2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_test_custom"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAnswer3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />

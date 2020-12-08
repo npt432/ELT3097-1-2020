@@ -120,7 +120,7 @@ public class LearnActivity extends AppCompatActivity {
     answer2 = (Button) findViewById(R.id.answer2Button);
     answer3 = (Button) findViewById(R.id.answer3Button);
     answer4 = (Button) findViewById(R.id.answer4Button);
-    progressBar = (ProgressBar) findViewById(R.id.progressBar);
+    progressBar = (ProgressBar) findViewById(R.id.progressBarRegister);
   }
 
   private void loadData(){

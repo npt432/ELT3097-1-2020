@@ -23,12 +23,12 @@ public class TestActivity_summary extends AppCompatActivity {
         Ibutton_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent backScreen = new Intent(TestActivity_summary.this, TestActivity_choose_answer.class);
+                Intent backScreen = new Intent(TestActivity_summary.this, SetSelectedActivity.class);
                 startActivity(backScreen);
             }
         });
 
-        button_retake = (Button)findViewById(R.id.buttonRetake);
+        button_retake = (Button)findViewById(R.id.buttonAnswer1);
         button_retake.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
