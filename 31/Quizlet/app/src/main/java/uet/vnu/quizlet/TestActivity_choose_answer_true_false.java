@@ -30,7 +30,7 @@ public class TestActivity_choose_answer_true_false extends AppCompatActivity {
         button_true.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent nextScreen = new Intent(TestActivity_choose_answer_true_false.this, TestActivity_type_answer.class);
+                Intent nextScreen = new Intent(TestActivity_choose_answer_true_false.this, TestActivity_summary.class);
                 int current  = progressBarRegister.getProgress();
                 nextScreen.putExtra("progressBarCurrent",current);
                 startActivity(nextScreen);
@@ -41,7 +41,7 @@ public class TestActivity_choose_answer_true_false extends AppCompatActivity {
         button_false.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent nextScreen = new Intent(TestActivity_choose_answer_true_false.this, TestActivity_type_answer.class);
+                Intent nextScreen = new Intent(TestActivity_choose_answer_true_false.this, TestActivity_summary.class);
                 int current  = progressBarRegister.getProgress();
                 nextScreen.putExtra("progressBarCurrent",current);
                 startActivity(nextScreen);

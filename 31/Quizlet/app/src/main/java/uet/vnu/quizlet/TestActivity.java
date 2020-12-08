@@ -26,7 +26,8 @@ private Class[] classes = new Class[3];
         classes[0] = TestActivity_choose_answer.class;
         classes[1] = TestActivity_choose_answer_true_false.class;
         classes[2] = TestActivity_type_answer.class;
-//        Random r = new Random();
+        Random random = new Random();
+        final int r = random.nextInt(3);
 
 //        progressBarRegister = (ProgressBar) findViewById(R.id.progressBarRegister);
 //        int data = 0;
@@ -37,7 +38,7 @@ private Class[] classes = new Class[3];
             @Override
             public void onClick(View v) {
                 //Intent nextScreen = new Intent(this, classes[r.nextInt(classes.length)]);
-                Intent nextScreen = new Intent(TestActivity.this, TestActivity_choose_answer_true_false.class);
+                Intent nextScreen = new Intent(TestActivity.this, classes[r]);
 //                int current  = progressBarRegister.getProgress();
 //                nextScreen.putExtra("progressBarCurrent",current);
                 startActivity(nextScreen);

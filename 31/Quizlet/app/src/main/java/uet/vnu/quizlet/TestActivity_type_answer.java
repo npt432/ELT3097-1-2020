@@ -67,9 +67,9 @@ public class TestActivity_type_answer extends AppCompatActivity {
         answer.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                Intent nextScreen = new Intent(TestActivity_type_answer.this, TestActivity_choose_answer.class);
-                int current  = progressBarRegister.getProgress();
-                nextScreen.putExtra("progressBarCurrent",current);
+                Intent nextScreen = new Intent(TestActivity_type_answer.this, TestActivity_summary.class);
+//                int current  = progressBarRegister.getProgress();
+//                nextScreen.putExtra("progressBarCurrent",current);
                 startActivity(nextScreen);
                 return false;
             }
