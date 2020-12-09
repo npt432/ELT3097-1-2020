@@ -34,7 +34,7 @@ public class TestActivity_type_answer extends AppCompatActivity {
         Ibutton_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent backScreen = new Intent(TestActivity_type_answer.this, TestActivity_choose_answer_true_false.class);
+                Intent backScreen = new Intent(TestActivity_type_answer.this, TestActivity.class);
                 startActivity(backScreen);
             }
         });

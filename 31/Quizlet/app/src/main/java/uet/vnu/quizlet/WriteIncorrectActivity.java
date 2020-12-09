@@ -21,7 +21,11 @@ public class WriteIncorrectActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_write_incorrect);
         textViewRightAnswer = (TextView) findViewById(R.id.textViewRightAnswer);
+<<<<<<< HEAD
+        //textViewWrongAnswer =  (TextView) findViewById(R.id.textViewWrongAnswer);
+=======
         textViewWrongAnswer =  (TextView) findViewById(R.id.textViewCurrentAnswer);
+>>>>>>> upstream/master
         editTextDataEntry = (EditText) findViewById(R.id.editTextDataEntry);
         //buttonRight = (Button) findViewById(R.id.buttonRight);
         progressBarProgressRegister = (ProgressBar) findViewById(R.id.progressBarProgressRegister);

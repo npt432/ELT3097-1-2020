@@ -22,7 +22,7 @@ public class TestActivity_choose_answer extends AppCompatActivity {
         Ibutton_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent backScreen = new Intent(TestActivity_choose_answer.this, TestActivity_type_answer.class);
+                Intent backScreen = new Intent(TestActivity_choose_answer.this, TestActivity.class);
                 startActivity(backScreen);
             }
         });
