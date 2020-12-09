@@ -38,8 +38,6 @@
             android:layout_gravity="center"
             android:layout_marginHorizontal="12dp"
             android:layout_weight="16"
-            android:max="100"
-            android:progress="0"
             android:progressDrawable="@drawable/progressbarcustom"
             android:scrollbarSize="@android:dimen/app_icon_size"
             android:secondaryProgress="100"
@@ -48,7 +46,7 @@
         <ImageButton
             android:id="@+id/imageButtonAdjust"
             android:layout_width="wrap_content"
-            android:layout_height="37dp"
+            android:layout_height="43dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@android:color/transparent"
@@ -62,7 +60,7 @@
         android:layout_marginTop="8dp"
         android:layout_weight="2"
         android:text="Ăn"
-        android:textColor="#353532"
+        android:textColor="@color/colorBlack"
         android:textSize="32dp" />
 
     <TextView
@@ -83,7 +81,7 @@
             android:layout_gravity="bottom"
             android:textSize="25sp"
             android:text="Eat"
-            android:textColor="#27AA03"
+            android:textColor="@color/colorGreen"
             android:id="@+id/textViewAnswer" />
         <ImageButton
             android:layout_width="78dp"
@@ -105,6 +103,7 @@
         android:layout_width="match_parent"
         android:layout_weight="1"
         android:layout_height="wrap_content"
+        android:textColorHint="@color/colorGreen"
         android:hint="ĐÁP ÁN ĐÚNG"
         android:id="@+id/textViewRequire"
         android:textSize="11sp"/>

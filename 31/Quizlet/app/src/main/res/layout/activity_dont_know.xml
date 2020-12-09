@@ -59,7 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ăn"
-        android:textColor="#353532"
+        android:textColor="@color/colorBlack"
         android:textSize="32dp"
         android:id="@+id/textViewWordInput"
         />
@@ -69,7 +69,7 @@
         android:text="ĐÁP ÁN ĐÚNG"
         android:textSize="11dp"
         android:layout_weight="1"
-        android:textColor="#27AA03"/>
+        android:textColor="@color/colorGreen"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -77,7 +77,7 @@
         android:layout_weight="1"
         android:id="@+id/textViewRightAnswer"
         android:textSize="15dp"
-        android:textColor="#191717"/>
+        android:textColor="@color/colorBlack"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -98,13 +98,13 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_gravity="top"
-        android:background="#F43636"/>
+        android:background="@color/colorRed"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:text="Chép lại đáp án đúng"
         android:id="@+id/textViewRequire"
-        android:textColor="#F43636"
+        android:textColor="@color/colorRed"
         android:textSize="11sp"/>
 </LinearLayout>
