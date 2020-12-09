@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TestActivity_type_answer">
+    tools:context=".Main.HomeTab.DirectSet.Test.TestActivity_type_answer">
 
     <ProgressBar
         android:id="@+id/progressBar"

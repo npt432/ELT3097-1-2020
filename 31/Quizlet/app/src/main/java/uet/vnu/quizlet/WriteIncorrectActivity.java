@@ -24,6 +24,7 @@ public class WriteIncorrectActivity extends AppCompatActivity {
         setContentView(R.layout.activity_write_incorrect);
         textViewRightAnswer = (TextView) findViewById(R.id.textViewRightAnswer);
         textViewWrongAnswer =  (TextView) findViewById(R.id.textViewWrongAnswer);
+
         editTextDataEntry = (EditText) findViewById(R.id.editTextDataEntry);
         buttonRight = (Button) findViewById(R.id.buttonRight);
         progressBarProgressRegister = (ProgressBar) findViewById(R.id.progressBarProgressRegister);

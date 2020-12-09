@@ -7,7 +7,7 @@
   android:orientation="vertical"
   android:background="@color/colorWhite"
   app:layoutDescription="@xml/activity_sign_up_scene"
-  tools:context=".SignUpActivity">
+  tools:context=".Intro.SignUpActivity">
 
   <ImageButton
     android:id="@+id/backImageButton"
@@ -85,7 +85,7 @@
     android:layout_marginHorizontal="@dimen/text_margin"/>
 
   <EditText
-    android:id="@+id/emailEditText"
+    android:id="@+id/emailForgotEditText"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:hint="@string/sign_up_email_hint"
@@ -158,5 +158,12 @@
     android:id="@+id/facebookLogin"
     android:layout_width="0dp"
     android:layout_height="0dp"/>
+  <ProgressBar
+    android:id="@+id/progressBar"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_gravity="center|bottom"
+    android:layout_marginBottom="20dp"
+    android:visibility="gone" />
 
 </LinearLayout>
