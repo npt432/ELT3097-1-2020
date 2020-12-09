@@ -44,7 +44,7 @@ public class TestActivity extends AppCompatActivity {
 //        int data = 0;
 //        progressBarRegister.setProgress(data);
 
-        final int a = new int a[]
+        final int a = new int a[3];
         trueFalse = (Switch)findViewById(R.id.switchTrueFalse);
         trueFalse.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
