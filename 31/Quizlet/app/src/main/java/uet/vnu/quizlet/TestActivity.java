@@ -1,19 +1,34 @@
 package uet.vnu.quizlet;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
+import android.widget.Switch;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
+import java.util.ArrayList;
 import java.util.Random;
 
+@SuppressLint("UseSwitchCompatOrMaterialCode")
 public class TestActivity extends AppCompatActivity {
-private Class[] classes = new Class[3];
 
+    Switch written;
+    Switch multiplechoice;
+    Switch trueFalse;
+    Switch definition;
+    Switch term;
+    private ArrayList<DataOfSet> dataList;
+
+    private Class[] classes = new Class[3];
+    private ViewPager viewPager;
+    private View view;
     Button button_start;
     ImageButton Ibutton_back;
     ProgressBar progressBarRegister;
@@ -23,15 +38,44 @@ private Class[] classes = new Class[3];
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
-        classes[0] = TestActivity_choose_answer.class;
-        classes[1] = TestActivity_choose_answer_true_false.class;
-        classes[2] = TestActivity_type_answer.class;
-        Random random = new Random();
-        final int r = random.nextInt(3);
+        viewPager = (ViewPager) view.findViewById(R.id.viewPager2);
 
 //        progressBarRegister = (ProgressBar) findViewById(R.id.progressBarRegister);
 //        int data = 0;
 //        progressBarRegister.setProgress(data);
+
+        final int a = new int a[]
+        trueFalse = (Switch)findViewById(R.id.switchTrueFalse);
+        trueFalse.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+
+                }
+            }
+        });
+
+        multiplechoice = (Switch)findViewById(R.id.switchMultiplechoice);
+        multiplechoice.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+
+                }
+            }
+        });
+
+        written = (Switch)findViewById(R.id.switchWritten);
+        written.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+
+                }
+            }
+        });
+        Random random = new Random();
+        final int r = random.nextInt(3);
 
         button_start = (Button)findViewById(R.id.buttonStartTest);
         button_start.setOnClickListener(new View.OnClickListener() {

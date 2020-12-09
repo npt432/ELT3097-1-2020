@@ -44,7 +44,7 @@ public class IntroActivity extends AppCompatActivity {
     dot3ImageView = (ImageView) findViewById(R.id.dot3);
     dot4ImageView = (ImageView) findViewById(R.id.dot4);
 
-    viewPager = (ViewPager) findViewById(R.id.viewPager);
+    viewPager = (ViewPager) findViewById(R.id.viewPager2);
     introsLayout = new int[] {R.layout.intro1, R.layout.intro2, R.layout.intro3, R.layout.intro4};
 
     signInButton = (Button) findViewById(R.id.signInButton);

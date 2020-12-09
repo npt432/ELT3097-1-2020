@@ -16,8 +16,11 @@ import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class TestActivity_type_answer extends AppCompatActivity {
 
+    private Class[] classes = new Class[3];
     EditText answer;
     ImageButton Ibutton_back;
     Button button_toikhongbiet;
@@ -29,6 +32,11 @@ public class TestActivity_type_answer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_type_answer);
+
+        classes[0] = TestActivity_choose_answer.class;
+        classes[1] = TestActivity_choose_answer_true_false.class;
+        Random random = new Random();
+        final int r = random.nextInt(2);
 
         progressBarRegister = (ProgressBar) findViewById(R.id.progressBarRegister);
         Intent intent = getIntent();
@@ -48,7 +56,7 @@ public class TestActivity_type_answer extends AppCompatActivity {
         button_toikhongbiet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent nextScreen = new Intent(TestActivity_type_answer.this, TestActivity_choose_answer.class);
+                Intent nextScreen = new Intent(TestActivity_type_answer.this, classes[r]);
                 int current  = progressBarRegister.getProgress();
                 nextScreen.putExtra("progressBarCurrent",current);
                 startActivity(nextScreen);
@@ -67,7 +75,7 @@ public class TestActivity_type_answer extends AppCompatActivity {
         answer.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                Intent nextScreen = new Intent(TestActivity_type_answer.this, TestActivity_summary.class);
+                Intent nextScreen = new Intent(TestActivity_type_answer.this, classes[r]);
 //                int current  = progressBarRegister.getProgress();
 //                nextScreen.putExtra("progressBarCurrent",current);
                 startActivity(nextScreen);

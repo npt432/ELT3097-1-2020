@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".TestActivity_summary">
 
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="358dp"
+        android:layout_height="329dp"
+        android:text="abc"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="303dp" >
+    </androidx.viewpager.widget.ViewPager>
+
     <ImageButton
         android:id="@+id/imageButtonBack"
         android:layout_width="wrap_content"
