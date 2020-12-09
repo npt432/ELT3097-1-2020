@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="15"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="20dp"
+                android:textSize="12sp"
+                android:id="@+id/tv_word" />
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/speaker"/>
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_mean"
+            android:layout_width="230dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/hurmes_regular"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

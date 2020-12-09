@@ -48,7 +48,7 @@
         <ImageButton
             android:id="@+id/imageButtonAdjust"
             android:layout_width="wrap_content"
-            android:layout_height="37dp"
+            android:layout_height="43dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@android:color/transparent"
@@ -64,7 +64,7 @@
         android:layout_marginTop="8dp"
         android:layout_weight="2"
         android:text="Ăn"
-        android:textColor="#353532"
+        android:textColor="@color/colorBlack"
         android:textSize="32dp" />
 
     <TextView
@@ -95,7 +95,7 @@
             android:layout_gravity="right|bottom"
             android:textSize="11sp"
             android:layout_weight="2"
-            android:textColor="#A800BCD4"/>
+            android:textColor="@color/colorAccent"/>
 
     </LinearLayout>
 
@@ -104,10 +104,11 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_gravity="top"
-        android:background="#E4EC05"/>
+        android:background="@color/colorGray"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_weight="1"
+        android:textColorHint="@color/colorGray"
         android:layout_height="wrap_content"
         android:hint="Nhập tiếng anh"
         android:id="@+id/textViewRequire"

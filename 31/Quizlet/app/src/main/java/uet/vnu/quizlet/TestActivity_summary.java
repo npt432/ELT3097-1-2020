@@ -107,7 +107,7 @@ public class TestActivity_summary extends AppCompatActivity {
     private void InitView() {
         testSummaryAdapter = new TestSummaryAdapter(getSupportFragmentManager()); //Khỏi tạo adapter. Nếu dùng activity thì...
         //... thay getChildFragmentManager() thành getSupportFragmentManager()
-        testSummaryAdapter.DataInput(dataOfSetArrayList); //Truyền List dataOfSet để tạo các view theo dữ liệu dataOfSet đổ vào
+        //testSummaryAdapter.DataInput(databaseReference); //Truyền List dataOfSet để tạo các view theo dữ liệu dataOfSet đổ vào
 
         viewPager = (ViewPager) view.findViewById(R.id.viewPager);
         //Custom viewpager (cách lề, thò thụt view bên phải sang view bên trái,...) bình thường không cần
@@ -115,6 +115,6 @@ public class TestActivity_summary extends AppCompatActivity {
         viewPager.setClipToPadding(false);
         viewPager.setPageMargin(25);
         //set adapter với setInfoAdapter đã khởi tạo bên trên
-        viewPager.setAdapter(setInfoAdapter);
+        viewPager.setAdapter(testSummaryAdapter);
     }
 }

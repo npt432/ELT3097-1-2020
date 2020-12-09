@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:thickness="5sp"
+    android:thickness="8sp"
     android:shape="ring"
     android:innerRadiusRatio="2.5"
     android:useLevel="true">
+<<<<<<< HEAD
     <solid android:color="@color/colorTear"/>
+=======
+    <solid android:color="@color/colorPrimaryDark"/>
+>>>>>>> upstream/master
 
 </shape>

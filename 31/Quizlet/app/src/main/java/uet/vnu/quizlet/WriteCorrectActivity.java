@@ -20,6 +20,7 @@ public class WriteCorrectActivity extends AppCompatActivity {
         int current = pbCurrent.getIntExtra("progressBarCurrent",0);
         //cong them 20 khi dung
         progressBarProgressRegister.setProgress( current + 20);
+
         CountDownTimer countDownTimer = new CountDownTimer(2000,500) {
             @Override
             public void onTick(long l) {
@@ -33,6 +34,7 @@ public class WriteCorrectActivity extends AppCompatActivity {
                 intent.putExtra("progressBarCurrent",current);
                 startActivity(intent);
                 onBackPressed();
+                finish();
             }
         };
         countDownTimer.start();

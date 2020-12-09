@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/itemProgressCurrent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="15"
+        android:orientation="horizontal"
+        >
+
+
+        <ImageButton
+            android:id="@+id/imageButtonClose"
+            android:layout_width="43dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:paddingLeft="2dp"
+            android:src="@drawable/closebutton" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="13"/>
+
+        <ImageButton
+            android:id="@+id/imageButtonAdjust"
+            android:layout_width="34dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/adjust" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Tiến độ chung"
+        android:textColor="@color/colorDarkGray"
+        android:layout_marginLeft="40dp"
+
+        android:gravity="left"
+        style="bold"
+        android:textSize="14sp"
+        android:fontFamily="@font/hurmes_semibold"
+        android:layout_marginTop="60dp"/>
+    <ProgressBar
+        android:id="@+id/pbRegister"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="12dp"
+        android:layout_weight="16"
+        android:max="100"
+        android:layout_marginTop="90dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/progressbarcustom"
+        android:scrollbarSize="@android:dimen/app_icon_size"
+        android:secondaryProgressTintMode="screen" />
+
+    <Button
+        style="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/hurmes_semibold"
+        android:gravity="center"
+        android:text="Vòng tiếp theo"
+        android:textColor="@color/colorWhite" />
+</RelativeLayout>

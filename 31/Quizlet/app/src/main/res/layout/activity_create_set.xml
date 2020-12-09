@@ -6,7 +6,7 @@
   android:layout_height="match_parent"
   android:orientation="vertical"
   app:layoutDescription="@xml/activity_create_set_scene"
-  tools:context=".CreateSetActivity">
+  tools:context=".Main.CreateTab.CreateSet.CreateSetActivity">
   <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"

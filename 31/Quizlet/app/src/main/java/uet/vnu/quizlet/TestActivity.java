@@ -44,13 +44,15 @@ public class TestActivity extends AppCompatActivity {
 //        int data = 0;
 //        progressBarRegister.setProgress(data);
 
-        final int a = new int a[3];
+        final int[] a = new int[3];
+
         trueFalse = (Switch)findViewById(R.id.switchTrueFalse);
         trueFalse.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
-
+                    a[0]=0;
+                    classes[a[0]] = TestActivity_choose_answer_true_false.class;
                 }
             }
         });
@@ -60,7 +62,8 @@ public class TestActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
-
+                    a[1]=1;
+                    classes[a[1]] = TestActivity_choose_answer.class;
                 }
             }
         });
@@ -70,7 +73,8 @@ public class TestActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
-
+                    a[2]=2;
+                    classes[a[2]] = TestActivity_type_answer.class;
                 }
             }
         });

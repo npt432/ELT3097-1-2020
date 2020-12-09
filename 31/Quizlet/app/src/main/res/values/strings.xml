@@ -36,9 +36,9 @@
   <string name="sign_up_username">username</string>
   <string name="sign_up_password">password</string>
   <string name="sign_up_button">Sign up</string>
-  <string name="sign_in_username">username</string>
-  <string name="sign_in_username_hint">Enter your username</string>
-  <string name="sign_in_login">or login with your username</string>
+  <string name="sign_in_username">email</string>
+  <string name="sign_in_username_hint">Enter your email</string>
+  <string name="sign_in_login">or login with your email</string>
   <string name="sign_in_password">password</string>
   <string name="sign_in_password_hint">Enter your password</string>
   <string name="sign_in_button">Log in</string>
@@ -46,7 +46,7 @@
   <string name="sign_in_forgot_username">username</string>
   <string name="sign_in_forgot_or">or</string>
   <string name="sign_in_forgot_password">password</string>
-  <string name="sign_in_forgot_endline">\?</string>
+  <string name="sign_in_forgot_endline">/?</string>
   <string name="home">Home</string>
   <string name="sets">Sets</string>
   <string name="create_set">Create study set</string>
@@ -59,6 +59,14 @@
   <string name="create_set_scan">Scan document</string>
   <string name="create_set_term">term</string>
   <string name="create_set_definition">definition</string>
+  <string name="view_all">View all</string>
+  <string name="num_of_terms">terms</string>
+  <string name="minimum_password">Password must be greater than 6 characters!</string>
+  <string name="auth_failed">Signin failed!</string>
+  <string name="forgot_password">Forgot password</string>
+  <string name="forgot_cancel">cancel</string>
+  <string name="forgot_ok">ok</string>
+  <string name="default_avatar_uri">https://lh3.googleusercontent.com/5jfsE-0a2MfFanbIyk26uJuv42m7KH4Kli3Sp_YnodpCHawtYkiSyoiX6Ql9CkW0sRZKuA</string>
 
 
   <!-- TODO: Remove or change this placeholder text -->
