@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TestActivity_choose_answer_true_false">
+    tools:context=".Main.HomeTab.DirectSet.Test.TestActivity_choose_answer_true_false">
 
     <Button
         android:id="@+id/buttonTrue"

@@ -7,7 +7,7 @@
   android:orientation="vertical"
   android:background="@color/colorWhite"
   app:layoutDescription="@xml/activity_sign_up_scene"
-  tools:context=".SignInActivity">
+  tools:context=".Intro.SignInActivity">
 
   <ImageButton
     android:id="@+id/backImageButton"
@@ -67,7 +67,7 @@
     android:layout_marginHorizontal="@dimen/text_margin"/>
 
   <EditText
-    android:id="@+id/usernameEditText"
+    android:id="@+id/emailEditText"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:hint="@string/sign_in_username_hint"
@@ -127,25 +127,17 @@
       android:layout_marginHorizontal="2dp"/>
 
     <TextView
-      android:id="@+id/forgotUsername"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/sign_in_forgot_username"
-      android:textColor="@color/colorTear"
-      android:layout_marginHorizontal="2dp"/>
-
-    <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/sign_in_forgot_or"
-      android:layout_marginHorizontal="2dp"/>
-
-    <TextView
       android:id="@+id/forgotPassword"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:text="@string/sign_in_forgot_password"
       android:textColor="@color/colorTear"
+      android:layout_marginHorizontal="2dp"/>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="?"
       android:layout_marginHorizontal="2dp"/>
   </LinearLayout>
 
@@ -159,6 +151,13 @@
     android:layout_width="0dp"
     android:layout_height="0dp"/>
 
+  <ProgressBar
+    android:id="@+id/progressBar"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_gravity="center|bottom"
+    android:layout_marginBottom="20dp"
+    android:visibility="gone" />
 
 
 </LinearLayout>

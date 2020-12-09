@@ -10,10 +10,11 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/Theme.Design.Light.NoActionBar">
-    <activity android:name=".SetOptionActivity"></activity>
-    <activity android:name=".CreateClassActivity" />
-    <activity android:name=".CreateFolderActivity" />
-    <activity android:name=".CreateSetActivity" />
+    <activity android:name=".Main.CreateTab.CreateSet.SetOptionActivity"></activity>
+    <activity android:name=".Main.CreateTab.CreateClass.CreateClassActivity" />
+    <activity android:name=".Main.CreateTab.CreateFolder.CreateFolderActivity" />
+    <activity android:name=".Main.CreateTab.CreateSet.CreateSetActivity" />
+    <activity android:name=".Main.HomeTab.SetSelectedActivity"/>
     <activity
       android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
       android:label="@string/app_name"
@@ -30,26 +31,26 @@
         <data android:scheme="@string/fb_login_protocol_scheme" />
       </intent-filter>
     </activity>
-    <activity android:name=".SignUpActivity" />
-    <activity android:name=".SignInActivity" />
-    <activity android:name=".IntroActivity">
+    <activity android:name=".Intro.SignUpActivity" />
+    <activity android:name=".Intro.SignInActivity" />
+    <activity android:name=".Intro.IntroActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:name=".MainActivity" />
-    <activity android:name=".TestActivity_summary" />
-    <activity android:name=".TestActivity_type_answer" />
-    <activity android:name=".TestActivity_choose_answer" />
-    <activity android:name=".TestActivity_choose_answer_true_false" />
-    <activity android:name=".TestActivity" />
-    <activity android:name=".LearnActivity" />
-    <activity android:name=".WriteActivity" />
-    <activity android:name=".WriteCorrectActivity" />
-    <activity android:name=".WriteIncorrectActivity" />
-    <activity android:name=".SetSelectedActivity" />
+    <activity android:name=".Main.MainActivity" />
+    <activity android:name=".Main.HomeTab.DirectSet.Test.TestActivity_summary" />
+    <activity android:name=".Main.HomeTab.DirectSet.Test.TestActivity_type_answer" />
+    <activity android:name=".Main.HomeTab.DirectSet.Test.TestActivity_choose_answer" />
+    <activity android:name=".Main.HomeTab.DirectSet.Test.TestActivity_choose_answer_true_false" />
+    <activity android:name=".Main.HomeTab.DirectSet.Test.TestActivity" />
+    <activity android:name=".Main.HomeTab.DirectSet.Learn.LearnActivity" />
+    <activity android:name=".Main.HomeTab.DirectSet.Write.WriteActivity" />
+    <activity android:name=".Main.HomeTab.DirectSet.Write.WriteCorrectActivity" />
+    <activity android:name=".Main.HomeTab.DirectSet.Write.WriteIncorrectActivity" />
+    <activity android:name=".Main.HomeTab.SetInfoFragment$SetSelectedActivity" />
 
     <meta-data
       android:name="com.facebook.sdk.ApplicationId"
