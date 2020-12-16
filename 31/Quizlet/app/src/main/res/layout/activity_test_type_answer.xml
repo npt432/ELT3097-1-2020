@@ -7,7 +7,7 @@
     tools:context=".Main.HomeTab.DirectSet.Test.TestActivity_type_answer">
 
     <ProgressBar
-        android:id="@+id/progressBar"
+        android:id="@+id/progressBarRegister"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="0dp"
         android:layout_height="10dp"
@@ -34,7 +34,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_toolbar_back" />
+        app:srcCompat="@drawable/ic_toolbar_back"
+        tools:ignore="VectorDrawableCompat" />
 
     <TextView
         android:id="@+id/textView3"
@@ -45,7 +46,7 @@
         android:layout_marginTop="297dp"
         android:layout_marginBottom="401dp"
         android:text="Ăn"
-        android:textColor="#000000"
+        android:textColor="@color/colorBlack"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,7 +85,7 @@
         android:layout_marginEnd="20dp"
         android:background="@null"
         android:text="I don't know"
-        android:textColor="#009688"
+        android:textColor="@color/colorTear"
         android:textSize="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
         app:layout_constraintEnd_toEndOf="parent"

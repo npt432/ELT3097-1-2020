@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
         android:text="Test"
-        android:textColor="#000000"
+        android:textColor="@color/colorBlack"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="@id/imageButtonBack"
         app:layout_constraintStart_toEndOf="@+id/imageButtonBack"
@@ -35,11 +35,11 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ProgressBar
-        android:id="@+id/progressBarSummary"
+        android:id="@+id/progressBarCircular"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="130dp"
         android:layout_height="114dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:max="360"
         android:progress="270"
         android:progressDrawable="@drawable/circular"
@@ -55,13 +55,13 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/button_true_false_custom"
+        android:background="@drawable/button_test_custom"
         android:text="Start test"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBarSummary" />
+        app:layout_constraintTop_toBottomOf="@+id/progressBarCircular" />
 
     <Switch
         android:id="@+id/switchWritten"
@@ -141,7 +141,7 @@
         app:layout_constraintStart_toStartOf="@+id/switchTerm" />
 
     <Switch
-        android:id="@+id/switch4Instantfeedback"
+        android:id="@+id/switchInstantfeedback"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
@@ -158,21 +158,33 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="15dp"
         android:text="Question count"
-        app:layout_constraintBottom_toTopOf="@+id/switch4Instantfeedback"
+        app:layout_constraintBottom_toTopOf="@+id/switchInstantfeedback"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/switch4Instantfeedback" />
+        app:layout_constraintStart_toStartOf="@+id/switchInstantfeedback" />
 
     <TextView
-        android:id="@+id/textViewYourscore"
+        android:id="@+id/textviewLastScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:text="LAST SCORE"
         android:textSize="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/progressBarSummary"
-        app:layout_constraintEnd_toEndOf="@+id/progressBarSummary"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarCircular"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarCircular"
         app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="@+id/progressBarSummary" />
+        app:layout_constraintStart_toStartOf="@+id/progressBarCircular" />
+
+    <TextView
+        android:id="@+id/Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100%"
+        android:textSize="30dp"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toTopOf="@+id/textviewLastScore"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarCircular"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/progressBarCircular" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
